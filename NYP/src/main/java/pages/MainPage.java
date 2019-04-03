@@ -35,23 +35,23 @@ public class MainPage extends MobileAPI {
     @FindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[2]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
     public WebElement txtNewsItemHeadline;
     @FindBy(xpath = "//android.widget.ListView[1]/android.widget.RelativeLayout")
-    List<WebElement> mainMenu = new ArrayList<>();
+    List<WebElement> mainMenu = new ArrayList<WebElement>();
     @FindBy(xpath = "//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.Button")
-    List<WebElement> alertTendingNews = new ArrayList<>();
+    List<WebElement> alertTendingNews = new ArrayList<WebElement>();
     String mainMenuArr[] = {"TOP STORIES","SAVED ARTICLES","NEWS","METRO","PAGE SIX","SPORTS","BUSINESS","OPINION","ENTERTAINMENT","FASHION","LIVING","MEDIA","TECH","REAL ESTATE","PHOTOS","VIDEO","ABOUT"};
 
-    public void setAlertTendingNews(String condition) {
-        if (alertTendingNews.get(0).isDisplayed()) {
-            switch (condition) {
-                case "yes":
-                    alertTendingNews.get(0).click();
-                    break;
-                case "no":
-                    alertTendingNews.get(1).click();
-                    break;
-            }
-        }
-    }
+//    public void setAlertTendingNews(String condition) {
+//        if (alertTendingNews.get(0).isDisplayed()) {
+//            switch (condition) {
+//                case "yes":
+//                    alertTendingNews.get(0).click();
+//                    break;
+//                case "no":
+//                    alertTendingNews.get(1).click();
+//                    break;
+//            }
+//        }
+//    }
     public void getMenu(){
         btnBurger.click();
     }

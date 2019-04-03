@@ -8,3 +8,4 @@ public class AccessibilityPage extends MobileAPI{
         text("Accessibility Node Provider").click();
     }
 }
+

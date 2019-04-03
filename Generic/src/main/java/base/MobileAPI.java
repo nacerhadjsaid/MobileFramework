@@ -445,4 +445,7 @@ public class MobileAPI {
     public static WebElement scroll_to_exact(String value) {
         return ad.scrollToExact(value);
     }
+    public void clickOnText(String string){
+        text(string).click();
+    }
 }
